@@ -21,8 +21,8 @@ public class FireBaseIssueListDetailActivity extends AppCompatActivity {
         tvComment=(TextView)findViewById(R.id.tv_comment);
 
         FireBaseIssueList fireBaseIssueList=getIntent().getParcelableExtra("FireBase");
-       /* User user=fireBaseIssueList.getUser();
-        tvUser.setText(user.getLogin());*/
+        User user=fireBaseIssueList.getUser();
+        tvUser.setText(user.getLogin());
         tvComment.setText(fireBaseIssueList.getBody());
 
     }

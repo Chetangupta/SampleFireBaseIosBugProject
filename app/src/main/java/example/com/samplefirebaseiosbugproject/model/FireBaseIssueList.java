@@ -3,6 +3,7 @@ package example.com.samplefirebaseiosbugproject.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import android.os.Parcel;
@@ -48,7 +49,7 @@ public class FireBaseIssueList implements Parcelable,Comparable<FireBaseIssueLis
     private User user;
     @SerializedName("labels")
     @Expose
-    private List<Label> labels = null;
+    private List<Label> labels=new ArrayList<>();
     @SerializedName("state")
     @Expose
     private String state;
@@ -60,7 +61,7 @@ public class FireBaseIssueList implements Parcelable,Comparable<FireBaseIssueLis
     private Object assignee;
     @SerializedName("assignees")
     @Expose
-    private List<Object> assignees = null;
+    private List<Object> assignees=new ArrayList<>();
     @SerializedName("milestone")
     @Expose
     private Object milestone;

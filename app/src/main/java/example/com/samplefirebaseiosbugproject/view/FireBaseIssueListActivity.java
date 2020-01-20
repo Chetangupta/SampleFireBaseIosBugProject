@@ -66,6 +66,7 @@ public class FireBaseIssueListActivity extends AppCompatActivity {
 
                                 }
                                 else{
+
                                     Intent intent = new Intent(FireBaseIssueListActivity.this, FireBaseIssueListDetailActivity.class);
                                     intent.putExtra("FireBase", fireBaseIssueList);
                                     startActivity(intent);
