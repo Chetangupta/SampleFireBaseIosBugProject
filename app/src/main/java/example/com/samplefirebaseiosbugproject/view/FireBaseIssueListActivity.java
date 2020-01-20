@@ -52,7 +52,6 @@ public class FireBaseIssueListActivity extends AppCompatActivity {
         mViewModel.getIssuesLiveData().observe(this, new Observer<List<FireBaseIssueList>>() {
             @Override
             public void onChanged(@Nullable List<FireBaseIssueList> fireBaseIssueLists) {
-                Log.d("Size", fireBaseIssueLists.toString());
                 progressBar.setVisibility(View.GONE);
                 Collections.sort(fireBaseIssueLists);
                 mAdapter = new FireBaseIosIssueAdapter(fireBaseIssueLists);
